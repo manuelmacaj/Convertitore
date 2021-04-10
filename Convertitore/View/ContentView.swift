@@ -20,7 +20,7 @@ struct ContentView: View {
     
     private var resultMeasurament: Measurement<UnitLength> {
         let inputValueText = Double(inputValue) ?? 0
-        var result: Measurement<UnitLength> = Measurement.init(value: 0, unit: .init(symbol: "Cannot convert the same unit length"))
+        var result: Measurement<UnitLength> = Measurement.init(value: 0, unit: .init(symbol: "Cannot convert the same length unit"))
         
         if(converterLenght[positionInputPicker].elementsEqual(converterLenght[positionOutputPicker])) {
             print("Do nothing")
@@ -91,21 +91,21 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section (header: Text("Input type")) {
-                    Picker ("Select unit of length", selection: $positionInputPicker) {
+                    Picker ("Select length unit", selection: $positionInputPicker) {
                         ForEach(0 ..< converterLenght.count) {
                             Text("\(converterLenght[$0])")
                         }
                     }
                     
                     HStack {
-                        TextField("Insert value", text: $inputValue)
+                        TextField("Insert length value", text: $inputValue)
                             .keyboardType(.decimalPad)
                         Text("\(unitLength[positionInputPicker])")
                     }
                 }
                 
                 Section (header: Text("Output type")) {
-                    Picker ("Select unit of length", selection: $positionOutputPicker) {
+                    Picker ("Select length unit", selection: $positionOutputPicker) {
                         ForEach(0 ..< converterLenght.count) {
                             Text("\(converterLenght[$0])")
                         }
