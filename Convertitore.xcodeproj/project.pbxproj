@@ -37,6 +37,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414E60BE26222DDE0046E7AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41BDC8DD261F997B00B7A942 /* Info.plist */,
+				41BDC8CF261F997900B7A942 /* AppDelegate.swift */,
+				41BDC8D1261F997900B7A942 /* SceneDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		414E60C026222E040046E7AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41BDC8DA261F997B00B7A942 /* LaunchScreen.storyboard */,
+				41BDC8D3261F997900B7A942 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		41BDC8C3261F997900B7A942 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +75,9 @@
 		41BDC8CE261F997900B7A942 /* Convertitore */ = {
 			isa = PBXGroup;
 			children = (
-				41BDC8CF261F997900B7A942 /* AppDelegate.swift */,
-				41BDC8D1261F997900B7A942 /* SceneDelegate.swift */,
-				41BDC8D3261F997900B7A942 /* ContentView.swift */,
+				414E60BE26222DDE0046E7AF /* Model */,
+				414E60C026222E040046E7AF /* View */,
 				41BDC8D5261F997B00B7A942 /* Assets.xcassets */,
-				41BDC8DA261F997B00B7A942 /* LaunchScreen.storyboard */,
-				41BDC8DD261F997B00B7A942 /* Info.plist */,
 				41BDC8D7261F997B00B7A942 /* Preview Content */,
 			);
 			path = Convertitore;
@@ -290,7 +306,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Convertitore/Preview Content\"";
 				DEVELOPMENT_TEAM = 6Z5XRRGAZV;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Convertitore/Info.plist;
+				INFOPLIST_FILE = Convertitore/Model/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +327,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Convertitore/Preview Content\"";
 				DEVELOPMENT_TEAM = 6Z5XRRGAZV;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Convertitore/Info.plist;
+				INFOPLIST_FILE = Convertitore/Model/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
