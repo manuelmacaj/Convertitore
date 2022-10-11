@@ -105,12 +105,12 @@
 		41E7C5C828F60FBC009A67EC /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				41E7C5C928F60FC4009A67EC /* README IMAGE */,
+				41E7C5C928F60FC4009A67EC /* READMEIMAGE */,
 			);
 			path = Media;
 			sourceTree = "<group>";
 		};
-		41E7C5C928F60FC4009A67EC /* README IMAGE */ = {
+		41E7C5C928F60FC4009A67EC /* READMEIMAGE */ = {
 			isa = PBXGroup;
 			children = (
 				41E7C5CB28F6103E009A67EC /* pickerLengths.png */,
@@ -118,7 +118,7 @@
 				41E7C5CA28F6103E009A67EC /* test2.png */,
 				41E7C5CD28F6103E009A67EC /* test3.png */,
 			);
-			path = "README IMAGE";
+			path = READMEIMAGE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
